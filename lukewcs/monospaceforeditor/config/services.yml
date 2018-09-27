@@ -1,0 +1,6 @@
+services:
+    lukewcs.monospaceforeditor.listener:
+        class: lukewcs\monospaceforeditor\event\main_listener
+        arguments:
+        tags:
+            - { name: event.listener }

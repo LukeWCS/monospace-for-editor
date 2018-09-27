@@ -1,0 +1,4 @@
+/.editorconfig export-ignore
+/.gitattributes export-ignore
+/monospace-for-editor_changelog.txt export-ignore
+/monospace-for-editor_version.json export-ignore

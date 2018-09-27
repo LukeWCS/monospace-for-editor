@@ -1,0 +1,28 @@
+<script>
+window.onload = function() {
+	var mfpe_monospace = sessionStorage.getItem('phpbb_mfpe_monospace');
+	if (mfpe_monospace === null) {
+		mfpe_monospace = false;
+	} else {
+		mfpe_monospace = (mfpe_monospace.toLowerCase() === "true" ? true : false);
+	}
+	document.getElementById("mfpe_chkbox").checked = mfpe_monospace;
+	if (mfpe_monospace) { mfpe_switch() }
+};
+function mfpe_switch() {
+	mfpe_monospace = document.getElementById("mfpe_chkbox").checked;
+	if (mfpe_monospace) {
+		document.getElementById('message').style.fontFamily="monospace, 'Courier New'";
+	} else {
+		document.getElementById('message').style.fontFamily="";
+	}
+	sessionStorage.setItem('phpbb_mfpe_monospace', mfpe_monospace);
+}
+</script>
+<div>
+	<button type="button" class="button button-icon-only bbcode-mfpe-tab" name="mfpe_button_tab" value="TAB" onclick="bbfontstyle(String.fromCharCode(9), '')" title="{L_MFPE_BUTTON_TAB_TOOLTIP}">
+		{L_MFPE_BUTTON_TAB_LABEL}
+	</button><br><br>
+	<label for="mfpe_chkbox" title="{L_MFPE_CHECKBOX_TOOLTIP}"><input type="checkbox" id="mfpe_chkbox" onclick="mfpe_switch()"> {L_MFPE_CHECKBOX_LABEL}</label>
+</div>
+

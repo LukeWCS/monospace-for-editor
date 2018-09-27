@@ -1,0 +1,32 @@
+{
+	"name": "lukewcs/monospaceforeditor",
+	"type": "phpbb-extension",
+	"description": "Enables on-demand activation of a monospace font for the Posting Editor and adds a tab insertion button.",
+	"homepage": "https://www.wcsaga.org",
+	"version": "0.2.2",
+	"time": "2018-09-27",
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "LukeWCS",
+			"email": "",
+			"homepage": "https://www.wcsaga.org",
+			"role": "Developer"
+		}
+	],
+	"require": {
+	"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "Monospace font for Posting Editor",
+			"soft-require": {
+			"phpbb/phpbb": ">=3.1.0"
+		},
+		"version-check": {
+			"host": "raw.githubusercontent.com",
+			"directory": "/LukeWCS/monospace-for-editor/master",
+			"filename": "monospace-for-editor_version.json",
+			"ssl": true
+		}
+	}
+}
