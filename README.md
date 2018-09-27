@@ -4,4 +4,4 @@ Extension for phpBB3.2 - Enables on-demand activation of a monospace font for th
 ## Installation
 * Upload the complete folder `lukewcs/` with all subfolders and files to `ext/` from phpBB.
 * In the ACP, go to "Customise" > "Manage extensions".
-* Click on "Enable" for "LF who was here".
+* Click on "Enable" for "Monospace font for Posting Editor".
